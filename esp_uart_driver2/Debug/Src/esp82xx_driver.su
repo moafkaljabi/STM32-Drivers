@@ -1,0 +1,6 @@
+/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/esp_uart_driver2/chip_headers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+../Src/esp82xx_driver.c:25:5:__io_putchar	16	static
+../Src/esp82xx_driver.c:31:6:debug_uart_init	8	static
+../Src/esp82xx_driver.c:92:6:esp_uart_init	8	static
+../Src/esp82xx_driver.c:146:6:debug_uart_write	16	static
+../Src/esp82xx_driver.c:155:17:compute_uart_bd	16	static

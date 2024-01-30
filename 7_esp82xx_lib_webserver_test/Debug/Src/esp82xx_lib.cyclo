@@ -1,0 +1,12 @@
+esp82xx_lib.c:45:6:esp82xx_sever_init	1
+esp82xx_lib.c:63:14:esp82xx_reset	2
+esp82xx_lib.c:79:14:esp82xx_startup_test	2
+esp82xx_lib.c:97:15:esp82xx_sta_mode	2
+esp82xx_lib.c:115:15:esp82xx_ap_connect	2
+esp82xx_lib.c:141:14:esp82xx_get_local_ip	4
+esp82xx_lib.c:174:14:esp82xx_multi_conn_en	2
+esp82xx_lib.c:192:14:esp82xx_create_tcp_server	2
+esp82xx_lib.c:210:15:send_server_data	4
+esp82xx_lib.c:241:7:server_begin	2
+esp82xx_lib.c:255:6:USART1_IRQHandler	1
+esp82xx_lib.c:261:6:USART2_IRQHandler	1

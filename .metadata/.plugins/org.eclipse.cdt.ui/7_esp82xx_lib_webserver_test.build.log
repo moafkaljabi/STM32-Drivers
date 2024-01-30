@@ -1,0 +1,10 @@
+08:56:33 **** Incremental Build of configuration Debug for project 7_esp82xx_lib_webserver_test ****
+make -j7 all 
+arm-none-eabi-size   7_esp82xx_lib_webserver_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8940	    116	   3684	  12740	   31c4	7_esp82xx_lib_webserver_test.elf
+Finished building: default.size.stdout
+ 
+
+08:56:33 Build Finished. 0 errors, 0 warnings. (took 320ms)
+

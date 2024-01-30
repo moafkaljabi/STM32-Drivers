@@ -1,0 +1,10 @@
+14:24:41 **** Incremental Build of configuration Debug for project 13_esp82xx_multil_sensor_data_cloud ****
+make -j7 all 
+arm-none-eabi-size   13_esp82xx_multil_sensor_data_cloud.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14760	    112	   3704	  18576	   4890	13_esp82xx_multil_sensor_data_cloud.elf
+Finished building: default.size.stdout
+ 
+
+14:24:41 Build Finished. 0 errors, 0 warnings. (took 221ms)
+

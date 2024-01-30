@@ -1,0 +1,10 @@
+08:25:07 **** Incremental Build of configuration Debug for project 9_getting_weather_info ****
+make -j7 all 
+arm-none-eabi-size   9_getting_weather_info.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9516	    236	   4732	  14484	   3894	9_getting_weather_info.elf
+Finished building: default.size.stdout
+ 
+
+08:25:07 Build Finished. 0 errors, 0 warnings. (took 341ms)
+

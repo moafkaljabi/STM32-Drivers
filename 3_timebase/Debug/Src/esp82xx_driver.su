@@ -1,0 +1,7 @@
+core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+esp82xx_driver.c:34:5:__io_putchar	16	static
+esp82xx_driver.c:40:6:debug_uart_init	8	static
+esp82xx_driver.c:101:6:esp_uart_init	8	static
+esp82xx_driver.c:155:6:debug_uart_write	16	static
+esp82xx_driver.c:165:6:systick_delay_ms	24	static
+esp82xx_driver.c:187:17:compute_uart_bd	16	static

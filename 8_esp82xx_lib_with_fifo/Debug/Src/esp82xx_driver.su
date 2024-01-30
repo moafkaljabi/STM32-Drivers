@@ -1,0 +1,10 @@
+../Src/esp82xx_driver.c:37:5:__io_putchar	16	static
+../Src/esp82xx_driver.c:43:6:debug_uart_init	8	static
+../Src/esp82xx_driver.c:105:6:esp_rs_pin_init	4	static
+../Src/esp82xx_driver.c:116:6:esp_rs_pin_enable	4	static
+../Src/esp82xx_driver.c:122:6:esp_rs_pin_disable	4	static
+../Src/esp82xx_driver.c:129:6:esp_uart_init	8	static
+../Src/esp82xx_driver.c:184:6:esp_uart_write_char	16	static
+../Src/esp82xx_driver.c:194:6:debug_uart_write	16	static
+../Src/esp82xx_driver.c:204:6:systick_delay_ms	24	static
+../Src/esp82xx_driver.c:226:17:compute_uart_bd	16	static

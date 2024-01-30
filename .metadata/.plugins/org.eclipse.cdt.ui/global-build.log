@@ -1,0 +1,226 @@
+10:47:49 **** Incremental Build of configuration Debug for project 8_esp82xx_lib_with_fifo ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/esp82xx_lib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/chip_headers/CMSIS/Include" -I"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/esp82xx_lib.d" -MT"Src/esp82xx_lib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/esp82xx_lib.o"
+../Src/esp82xx_lib.c: In function 'esp82xx_reset':
+../Src/esp82xx_lib.c:130:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  130 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_set_wifi_mode':
+../Src/esp82xx_lib.c:173:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  173 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_list_access_points':
+../Src/esp82xx_lib.c:198:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  198 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'exp82xx_join_wifi_access_point':
+../Src/esp82xx_lib.c:224:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  224 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_get_local_ip_addr':
+../Src/esp82xx_lib.c:249:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  249 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_create_tcp_conn':
+../Src/esp82xx_lib.c:277:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  277 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+At top level:
+../Src/esp82xx_lib.c:245:16: warning: 'esp82xx_get_local_ip_addr' defined but not used [-Wunused-function]
+  245 | static uint8_t esp82xx_get_local_ip_addr(void)
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/esp82xx_lib.c:169:16: warning: 'esp82xx_set_wifi_mode' defined but not used [-Wunused-function]
+  169 | static uint8_t esp82xx_set_wifi_mode(uint8_t mode)
+      |                ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_esp82xx_lib_with_fifo.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_esp82xx_lib_with_fifo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_esp82xx_lib_with_fifo.elf
+ 
+arm-none-eabi-size   8_esp82xx_lib_with_fifo.elf 
+arm-none-eabi-objdump -h -S  8_esp82xx_lib_with_fifo.elf  > "8_esp82xx_lib_with_fifo.list"
+   text	   data	    bss	    dec	    hex	filename
+   8992	    124	   4732	  13848	   3618	8_esp82xx_lib_with_fifo.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_esp82xx_lib_with_fifo.list
+ 
+10:47:54 **** Incremental Build of configuration Debug for project 8_esp82xx_lib_with_fifo ****
+make -j7 all 
+arm-none-eabi-size   8_esp82xx_lib_with_fifo.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8992	    124	   4732	  13848	   3618	8_esp82xx_lib_with_fifo.elf
+Finished building: default.size.stdout
+ 
+10:49:53 **** Incremental Build of configuration Debug for project 8_esp82xx_lib_with_fifo ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/esp82xx_lib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/chip_headers/CMSIS/Include" -I"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/esp82xx_lib.d" -MT"Src/esp82xx_lib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/esp82xx_lib.o"
+../Src/esp82xx_lib.c: In function 'esp82xx_reset':
+../Src/esp82xx_lib.c:131:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  131 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_set_wifi_mode':
+../Src/esp82xx_lib.c:174:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  174 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_list_access_points':
+../Src/esp82xx_lib.c:199:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  199 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'exp82xx_join_wifi_access_point':
+../Src/esp82xx_lib.c:225:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  225 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_get_local_ip_addr':
+../Src/esp82xx_lib.c:250:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  250 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_create_tcp_conn':
+../Src/esp82xx_lib.c:278:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  278 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+At top level:
+../Src/esp82xx_lib.c:246:16: warning: 'esp82xx_get_local_ip_addr' defined but not used [-Wunused-function]
+  246 | static uint8_t esp82xx_get_local_ip_addr(void)
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_esp82xx_lib_with_fifo.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_esp82xx_lib_with_fifo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_esp82xx_lib_with_fifo.elf
+ 
+arm-none-eabi-size   8_esp82xx_lib_with_fifo.elf 
+arm-none-eabi-objdump -h -S  8_esp82xx_lib_with_fifo.elf  > "8_esp82xx_lib_with_fifo.list"
+   text	   data	    bss	    dec	    hex	filename
+   9096	    124	   4732	  13952	   3680	8_esp82xx_lib_with_fifo.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_esp82xx_lib_with_fifo.list
+ 
+10:51:34 **** Incremental Build of configuration Debug for project 8_esp82xx_lib_with_fifo ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/esp82xx_lib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/chip_headers/CMSIS/Include" -I"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/esp82xx_lib.d" -MT"Src/esp82xx_lib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/esp82xx_lib.o"
+../Src/esp82xx_lib.c: In function 'esp82xx_reset':
+../Src/esp82xx_lib.c:130:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  130 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_set_wifi_mode':
+../Src/esp82xx_lib.c:173:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  173 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_list_access_points':
+../Src/esp82xx_lib.c:198:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  198 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'exp82xx_join_wifi_access_point':
+../Src/esp82xx_lib.c:224:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  224 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_get_local_ip_addr':
+../Src/esp82xx_lib.c:249:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  249 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+../Src/esp82xx_lib.c: In function 'esp82xx_create_tcp_conn':
+../Src/esp82xx_lib.c:277:31: warning: passing argument 1 of 'wait_resp' makes pointer from integer without a cast [-Wint-conversion]
+  277 |  wait_resp("OK"||"ok"||"ready"||"Ready");
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                               |
+      |                               int
+../Src/esp82xx_lib.c:40:29: note: expected 'char *' but argument is of type 'int'
+   40 | static void wait_resp(char *pt);
+      |                       ~~~~~~^~
+At top level:
+../Src/esp82xx_lib.c:245:16: warning: 'esp82xx_get_local_ip_addr' defined but not used [-Wunused-function]
+  245 | static uint8_t esp82xx_get_local_ip_addr(void)
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_esp82xx_lib_with_fifo.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/moafk22/mwafa2/STM32CubeIDE/Embedded-STM32-WIFI/8_esp82xx_lib_with_fifo/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_esp82xx_lib_with_fifo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_esp82xx_lib_with_fifo.elf
+ 
+arm-none-eabi-size   8_esp82xx_lib_with_fifo.elf 
+arm-none-eabi-objdump -h -S  8_esp82xx_lib_with_fifo.elf  > "8_esp82xx_lib_with_fifo.list"
+   text	   data	    bss	    dec	    hex	filename
+   9184	    124	   4732	  14040	   36d8	8_esp82xx_lib_with_fifo.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_esp82xx_lib_with_fifo.list
+ 

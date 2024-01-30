@@ -1,0 +1,10 @@
+esp82xx_driver.c:37:5:__io_putchar	1
+esp82xx_driver.c:43:6:debug_uart_init	1
+esp82xx_driver.c:105:6:esp_rs_pin_init	1
+esp82xx_driver.c:116:6:esp_rs_pin_enable	1
+esp82xx_driver.c:122:6:esp_rs_pin_disable	1
+esp82xx_driver.c:129:6:esp_uart_init	1
+esp82xx_driver.c:184:6:esp_uart_write_char	2
+esp82xx_driver.c:194:6:debug_uart_write	2
+esp82xx_driver.c:204:6:systick_delay_ms	3
+esp82xx_driver.c:226:17:compute_uart_bd	1
